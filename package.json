@@ -12,6 +12,7 @@
   "dependencies": {
     "micro-bot": "^2.5.3",
     "node-downloader-helper": "^1.0.14",
+    "axios":"^0.20.0",
     "nodemon": "^2.0.4",
     "telegraf": "^3.38.0"
   },
