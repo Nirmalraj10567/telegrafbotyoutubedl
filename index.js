@@ -4,7 +4,7 @@
 
 const { Telegraf } = require('telegraf')
 
-const bot = new Telegraf("1323936121:AAHixzno7g60DXEcJ7x0PfgAQZiOAKlnZqU")
+const bot = new Telegraf("1323960DXEcJ7x0PfgAQZiOAKlnZqU")
 const { DownloaderHelper } = require("node-downloader-helper");
 
 bot.start((ctx) => ctx.reply('Welcome'))
