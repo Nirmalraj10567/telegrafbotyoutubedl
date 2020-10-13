@@ -1,14 +1,16 @@
-var http = require('http');
 
-http.createServer(function (req, res) {
+const { Composer } = require('micro-bot')
 
-  res.writeHead(200, {'Content-Type': 'text/plain'});
+const bot = new Composer()
 
-  res.end('Hello World!');
 
-}).listen(8080);
-const { Telegraf } = require('telegraf')
-const bot = new Telegraf(process.env.BOT_TOKEN)
+  
+
+  
+
+
+///const { Telegraf } = require('telegraf')
+///const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.startPolling()
 bot.start((ctx) => ctx.reply('Welcome'))
 bot.help((ctx) => ctx.reply('Send me a sticker'))
