@@ -1,0 +1,19 @@
+{
+
+  "name": "YouTube bot",
+
+  "description": "All in one bot for torrenting",
+
+  "repository": "https://github.com/Nirmalraj10567/telegrafbotyoutubedl",
+
+  "keywords": ["node", "express", "bot", "torrent", "automation"],
+
+  "builpacks": [
+
+    { "url": "heroku/nodejs" },
+
+    { "url": "https://github.com/Nirmalraj10567/telegrafbotyoutubedl.git" }
+
+  ]
+
+}
