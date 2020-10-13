@@ -27,9 +27,9 @@ bot.startPolling()
 bot.start((ctx) => ctx.reply('Welcome'))
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
-bot.command("youtube",(ctx)=>
+bot.command("youtube",async(ctx)=>
 {  
-  const query1 = ctx.message.text.split(" ")[1];
+  const query1 = await ctx.message.text.split(" ")[1];
 console.log(query1)
 
 
