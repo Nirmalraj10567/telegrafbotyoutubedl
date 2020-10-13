@@ -32,11 +32,11 @@ bot.action("go-back",(ctx)=>{
       ]
     }
   })  
-})
-bot.action("mp4_720p",async(ctx)=>{
+}) 
+bot.action("mp4_720p",(ctx)=>{
   ctx.deleteMessage()
 const axios = require('axios')
-const zx = await axios.get('https://youtube-downloader3.herokuapp.com/video_info.php?url='+query1)
+const zx = axios.get('https://youtube-downloader3.herokuapp.com/video_info.php?url='+query1)
   .then((response) => {
   A= response.data.links[1].url
   ctx.telegram.sendMessage(ctx.chat.id,"youtube-downloads",{
