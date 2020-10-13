@@ -1,2 +1,2 @@
-web: nodemon index.js
+web: micro-bot -p $PORT
  
