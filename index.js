@@ -1,5 +1,6 @@
 const { Telegraf } = require('telegraf')
 const bot = new Telegraf(process.env.BOT_TOKEN)
+bot.startPolling()
 bot.start((ctx) => ctx.reply('Welcome'))
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
@@ -123,5 +124,7 @@ bot.action("webm_1080p",async(ctx)=>{
 
 
 
+
+console.log('Bot is up and running')
 
 bot.launch()
