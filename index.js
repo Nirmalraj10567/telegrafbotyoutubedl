@@ -13,6 +13,22 @@ bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 
 bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
+const TeleBot = require('telebot');
+
+const bot = new TeleBot(process.env.API_TOKEN);
+bot.on(/^\/gplinks (.+)$/, async(msg, props) => {
+
+    const text =await props.match[1];
+    const axios = require('axios')
+const zx = axios.get('https://gplinks.in/api?api=1b1093a7f93afbe94ad2df18b89861d4970c23b8&url='+text)
+
+  .then((response) => {
+  A= response.data.shortenedUrl
+    return bot.sendMessage(msg.from.id, A,{ replyToMessage: msg.message_id });
+}) 
+});
+bot.start()
+
 
 
 
