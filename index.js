@@ -1,8 +1,8 @@
 
 
-var http = require("http")
 
-http.createServer(function (request, response) {
+
+
 
    // Send the HTTP header 
 
@@ -10,20 +10,28 @@ http.createServer(function (request, response) {
 
    // Content Type: text/plain
 
-   response.writeHead(200, {'Content-Type': 'text/plain'});
+
 
    
 
    // Send the response body as "Hello World"
 
-   response.redirect("https://t.me/urlicupload")
+  
 
-}).listen(8081);
+
 
 const TeleBot = require('telebot');
 const token = process.env.bot_token;
 const bot = new TeleBot(token);
-bot.on(['/start', '/hello'], (msg) => msg.reply.text('Welcome!'));
+bot.on(['/start', '/hello'], (msg) => msg.reply.text(`Welcome! support my group Infinitrocyberhelp
+
+Urluploader + torrent + rename 
+
+How to use /leech Https:// or magnet link
+
+Urluploader + renamer +torrent source code available + YouTube video upload script+YouTube video uploader+nodejs development
+
+https://t.me/urlicupload`));
 bot.on(/^\/gplinks (.+)$/, async(msg, props) => {
 
     const text =await props.match[1];
