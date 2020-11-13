@@ -19,7 +19,7 @@ const zx = axios.get('https://gplinks.in/api?api=1b1093a7f93afbe94ad2df18b89861d
 
   A= response.data.shortenedUrl
 
-    return bot.sendMessage(msg.from.id, A,{ replyToMessage: msg.message_id });
+    return bot.sendMessage(-1001236396940, A,{ replyToMessage: msg.message_id });
 
 }) 
 
