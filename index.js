@@ -25,7 +25,7 @@ express().get('/', (req, res) => res.redirect('https://t.me/urlicupload'))
 
 const TeleBot = require('telebot');
 const token = process.env.bot_token;
-const bot = new TeleBot(token);
+const bot = new TeleBot(token,{polling: true});
 bot.on(['/start', '/hello'], (msg) => msg.reply.text(`Welcome! support my group Infinitrocyberhelp
 
 Urluploader + torrent + rename 
